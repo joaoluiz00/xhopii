@@ -1,0 +1,203 @@
+*{
+  margin: 0; /* Define a margem padrão como 0 para todos os elementos */
+}
+.laranja{
+  height: 15vh; /* Define a altura como 15% da altura da viewport */
+  width: 100%; /* Define a largura como 100% da largura do viewport */
+  background-color: #FB5630; /* Cor de fundo laranja */
+  display: flex; /* Usa flexbox para alinhar os elementos internos */
+  align-items: center; /* Centraliza os itens verticalmente */
+  font-size: 40px; /* Define o tamanho da fonte */
+  font-family: Arial, Helvetica; /* Define a família da fonte */
+  color: rgb(255, 255, 255); /* Cor do texto branco */
+}
+
+.logo{
+  height: 50px; /* Define a altura do logotipo */
+  width: 50px; /* Define a largura do logotipo */
+  margin-left: 40px; /* Define uma margem à esquerda para o logotipo */
+}
+.xhopii{
+  margin-bottom: 30px; /* Define uma margem inferior para o texto */
+  margin-left: 3px; /* Define uma margem à esquerda para o texto */
+  color: rgb(255, 255, 255); /* Cor do texto branco */
+  text-decoration: none; /* Remove a decoração de texto */
+}
+
+.sair{
+  color: rgb(255, 255, 255); /* Cor do texto branco */
+  text-decoration: none; /* Remove a decoração de texto */
+  font-size: 20px; /* Define o tamanho da fonte */
+  margin-left: 79%; /* Define uma margem à esquerda para o link */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+.nav{
+  width: 100%; /* Define a largura como 100% da largura do viewport */
+  height: 10vh; /* Define a altura como 10% da altura da viewport */
+  background-color: #FB7730; /* Cor de fundo laranja */
+}
+
+.nav ul{
+  display: flex; /* Usa flexbox para alinhar os itens da lista */
+  flex-direction: row; /* A direção padrão do flex é linha */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  margin: 0; /* Define a margem como 0 */
+  padding: 0; /* Define o preenchimento como 0 */
+  list-style: none; /* Remove os marcadores de lista */
+  text-decoration: none; /* Remove a decoração de texto */
+}
+.nav ul li a{
+  margin-top: 1px; /* Define uma pequena margem superior para os links */
+  font-size: 15px; /* Define o tamanho da fonte */
+  color: rgb(255, 255, 255); /* Cor do texto branco */
+  text-align: center; /* Centraliza o texto */
+  text-decoration: none; /* Remove a decoração de texto */
+  padding: 20px; /* Adiciona preenchimento aos links */
+  display: block; /* Transforma os links em blocos para ocupar toda a largura */
+}
+.nav ul li a:hover{
+color: rgb(255, 255, 255); /* Cor do texto branco ao passar o mouse */
+background-color: #FB5630; /* Cor de fundo laranja ao passar o mouse */
+}
+/* Aqui começam as regras para responsividade */
+.container {
+  margin-top: 10vh; /* Define uma margem superior para o conteúdo */
+}
+
+.abaixo img{
+  margin-left: 10%; /* Define uma margem à esquerda para as imagens */
+  margin-top: 10vh; /* Define uma margem superior para as imagens */
+  width: 80vw; /* Define a largura das imagens como 80% da largura da viewport */
+  height: 20vh; /* Define a altura das imagens como 20% da altura da viewport */
+}
+
+.descoberta h4{
+  color: #FB7730; /* Cor do texto laranja */
+  font-family: Arial, Helvetica, sans-serif; /* Define a família da fonte */
+  font-size: 15px; /* Define o tamanho da fonte */
+  margin-left: 46%; /* Define uma margem à esquerda para o título */
+  margin-top: 6vh; /* Define uma margem superior para o título */
+}
+
+.linha hr{
+  border-color: #FB5630; /* Cor da borda laranja */
+  box-sizing:border-box; /* Define a caixa como incluindo a borda */
+  width:100%; /* Define a largura como 100% */
+  margin-top: 6vh; /* Define uma margem superior */
+}
+
+.grid-container {
+  display: grid; /* Usa grid para criar um layout em grade */
+  grid-template-columns: repeat(5, 1fr); /* Define 5 colunas iguais */
+  grid-gap: 50px; /* Define o espaçamento entre as células */
+  border: 10px solid transparent; /* Adiciona uma borda transparente */
+  padding: 15px; /* Adiciona preenchimento */
+  border-image: url(img/home.PNG) 1 round; /* Adiciona uma imagem de borda */
+}
+
+.grid-item {
+  position: relative; /* Define a posição como relativa */
+  width: 100%; /* Define a largura como 100% */
+  height: auto; /* Define a altura como automática */
+  overflow: hidden; /* Esconde o conteúdo que transborda */
+  border: 2px solid transparent; /* Adiciona uma borda transparente inicialmente */
+  transition: border-color 0.3s ease; /* Transição suave para a mudança de cor da borda */
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+}
+
+.grid-item img {
+  width: 100%; /* Define a largura da imagem como 100% */
+  height: auto; /* Define a altura da imagem como automática */
+  object-fit: cover; /* Redimensiona a imagem para preencher o contêiner */
+}
+
+.grid-item:hover {
+  border-color: #ff6600; /* Cor da borda laranja ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+  background: #f5f5f5; /* Cor de fundo cinza claro */
+}
+
+footer > section {
+  width: 80%; /* Define a largura como 80% */
+  margin-left: 10%; /* Define uma margem à esquerda como 10% */
+  padding-top: 50px; /* Define o preenchimento superior como 50px */
+  display: flex; /* Usa flexbox para alinhar os elementos */
+  justify-content: space-around; /* Distribui os itens uniformemente ao redor do contêiner */
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+footer > section .imagens section {
+  display: grid; /* Usa grid para criar um layout em grade */
+  grid-template-columns: repeat(3, 1fr); /* Define 3 colunas iguais */
+  gap: 2px 2px; /* Define o espaçamento entre as células */
+}
+
+footer > section .qr-code .image-qr {
+  width: 150px; /* Define a largura da imagem QR */
+  height: 150px; /* Define a altura da imagem QR */
+  margin: 20px 0 20px 0; /* Define as margens */
+}
+
+footer > section .qr-code img {
+  margin: 20px 0 20px 0; /* Define as margens */
+  width: 150px; /* Define a largura da imagem */
+  height: 50px; /* Define a altura da imagem */
+}
+
+footer > section nav {
+  width: 20%; /* Define a largura como 20% */
+  padding: 10px; /* Adiciona preenchimento */
+  margin: 10px; /* Define as margens */
+  height: 500px; /* Define a altura como 500px */
+  display: flex; /* Usa flexbox para alinhar os elementos */
+  flex-direction: column; /* A direção padrão do flex é coluna */
+  margin-bottom: 150px; /* Define uma margem inferior */
+}
+
+footer > section nav h2 {
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  font-size: 20px; /* Define o tamanho da fonte */
+  padding: 20px 0 20px 0; /* Adiciona preenchimento */
+}
+
+footer > section nav a, footer > section nav div {
+  text-decoration: none; /* Remove a decoração de texto */
+  color: #636474; /* Cor do texto cinza */
+  margin: 10px 0 10px 0; /* Define as margens */
+}
+
+footer > section nav img {
+  height: 30px; /* Define a altura da imagem */
+}
+
+footer > div {
+  text-align: center; /* Centraliza o texto */
+  width: 100%; /* Define a largura como 100% */
+  padding: 30px; /* Adiciona preenchimento */
+}
+
+footer .copyright {
+  padding: 0; /* Define o preenchimento como 0 */
+  width: 80%; /* Define a largura como 80% */
+  margin-left: 10%; /* Define uma margem à esquerda como 10% */
+}
+
+footer .copyright div {
+  padding: 20px; /* Adiciona preenchimento */
+}
+
+footer .copyright hr{
+  border-color: rgb(0, 0, 0); /* Cor da borda preta */
+}
+
+/* Estilos para dispositivos com largura máxima de 500px */
+@media screen and (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* Define 2 colunas iguais */
+  }
+}

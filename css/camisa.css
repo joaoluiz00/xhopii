@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 9%;
+}
+header img{
+    height: 90px;
+}
+header h1{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+.header{
+    background-color: rgb(251, 86, 48);
+    height: 90px;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+.menu-horizontal{
+    width: 100%;
+    background-color: rgb(215, 215, 215);
+}
+.menu-horizontal ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+.menu-horizontal ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(251, 86, 48);
+    text-align: center;
+    padding: 15px;
+    display: block;
+}
+
+main{
+    padding-top: 50px;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+.minis{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10%;
+}
+.camisa{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.minis .camisa img{
+    height: 100px;
+    width: 100px;
+}
+.acamisa{
+    height: 600px;
+    width: 450px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.acamisa img{
+    height: 500px;
+    width: 450px;
+}
+
+.info{
+    height: 100%;
+    width: 30%;
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+h2{
+    color: rgb(251, 86, 48);
+}
+.cores{
+    border: 2px solid rgb(215, 215, 215);
+    height: 40px;
+    width: 60px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-right: 10px;
+}
+.tamanho{
+    border: 2px solid rgb(215, 215, 215);
+    height: 40px;
+    width: 35px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 5px;
+}
+.comprar{
+    height: 55px;
+    width: 100px;
+    background-color: rgb(251, 86, 48);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#ft1{
+    border: 2px solid rgb(251, 86, 48);
+}
+
+.info *{
+    margin-bottom: 20px;
+}
