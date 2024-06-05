@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -12,18 +12,18 @@
 </head>
 <body>
     <section class="laranja">
-        <img class="logo" src="../img/logo.png"><h1 class="xhopii">Xhopii</h1>
+        <img class="logo" src="img/logo.png"><h1 class="xhopii">Xhopii</h1>
         <a class="sair" href="login.html">Sair</a>
     </section>
    <nav class="nav">
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="cadcliente.php">Cadastro Cliente</a></li>
-            <li><a href="cadfuncionario.php">Cadastro Funcionario</a></li>
-            <li><a href="cadproduto.php">Cadastro Produto</a></li>
-            <li><a href="cliente.php">Ver Cliente</a></li>
-            <li><a href="funcionario.php">Ver Funcionario</a></li>
-            <li><a href="verproduto.php">Ver Produto</a></li>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="view/cadcliente.php">Cadastro Cliente</a></li>
+            <li><a href="view/cadfuncionario.php">Cadastro Funcionario</a></li>
+            <li><a href="view/cadproduto.php">Cadastro Produto</a></li>
+            <li><a href="view/cliente.php">Ver Cliente</a></li>
+            <li><a href="view/funcionario.php">Ver Funcionario</a></li>
+            <li><a href="view/verproduto.php">Ver Produto</a></li>
         </ul>
     </nav> 
     <div class="container">
@@ -40,18 +40,18 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <img src="../img/carousel-1.jpg" alt="img1" style="width:100%;">
+              <img src="img/carousel-1.jpg" alt="img1" style="width:100%;">
             </div>
       
             <div class="item">
-              <img src="../img/carousel-2.jpg" alt="img2" style="width:100%;">
+              <img src="img/carousel-2.jpg" alt="img2" style="width:100%;">
             </div>
           
             <div class="item">
-              <img src="../img/carousel-3.jpg" alt="img3" style="width:100%;">
+              <img src="img/carousel-3.jpg" alt="img3" style="width:100%;">
             </div>
             <div class="item">
-                <img src="../img/carousel-4.jpg" alt="img4" style="width:100%;">
+                <img src="img/carousel-4.jpg" alt="img4" style="width:100%;">
               </div>
           </div>
       
@@ -67,7 +67,7 @@
         </div>
       </div>
       <section class="abaixo">
-        <img src="../img/home-promocao.png" alt="promocao">
+        <img src="img/home-promocao.png" alt="promocao">
       </section>
       <section class="descoberta">
         <H4>DESCOBERTA DO DIA</H4>
@@ -77,16 +77,16 @@
       </section>
 
       <div class="grid-container">
-        <div class="grid-item"><a href="#"><img src="../img/home.PNG" alt="Imagem 1"></a></div>
-        <div class="grid-item"><a href="#"><img src="../img/home.PNG" alt="Imagem 2"></a></div>
-        <div class="grid-item"><a href="#"><img src="../img/home.PNG" alt="Imagem 3"></a></div>
-        <div class="grid-item"><a href="#"><img src="../img/home.PNG" alt="Imagem 4"></a></div>
-        <div class="grid-item"><a href="#"><img src="../img/home.PNG" alt="Imagem 5"></a></div>
-        <div class="grid-item"><a href="#"><img src="../img/home.PNG" alt="Imagem 6"></a></div>
-        <div class="grid-item"><a href="#"><img src="../img/home.PNG" alt="Imagem 7"></a></div>
-        <div class="grid-item"><a href="#"><img src="../img/home.PNG" alt="Imagem 8"></a></div>
-        <div class="grid-item"><a href="#"><img src="../img/home.PNG" alt="Imagem 9"></a></div>
-        <div class="grid-item"><a href="#"><img src="../img/home.PNG" alt="Imagem 10"></a></div>
+        <div class="grid-item"><a href="#"><img src="img/home.PNG" alt="Imagem 1"></a></div>
+        <div class="grid-item"><a href="#"><img src="img/home.PNG" alt="Imagem 2"></a></div>
+        <div class="grid-item"><a href="#"><img src="img/home.PNG" alt="Imagem 3"></a></div>
+        <div class="grid-item"><a href="#"><img src="img/home.PNG" alt="Imagem 4"></a></div>
+        <div class="grid-item"><a href="#"><img src="img/home.PNG" alt="Imagem 5"></a></div>
+        <div class="grid-item"><a href="#"><img src="img/home.PNG" alt="Imagem 6"></a></div>
+        <div class="grid-item"><a href="#"><img src="img/home.PNG" alt="Imagem 7"></a></div>
+        <div class="grid-item"><a href="#"><img src="img/home.PNG" alt="Imagem 8"></a></div>
+        <div class="grid-item"><a href="#"><img src="img/home.PNG" alt="Imagem 9"></a></div>
+        <div class="grid-item"><a href="#"><img src="img/home.PNG" alt="Imagem 10"></a></div>
       </div>
 
       <footer>
@@ -115,13 +115,13 @@
             <nav class="imagens">
                 <h2>PAGAMENTO</h2>
                 <section>
-                    <img src="../img/pix.png">
-                    <img src="../img/boleto.png">
-                    <img src="../img/americane.png">
-                    <img src="../img/vsa.png">
-                    <img src="../img/master.png">
-                    <img src="../img/hper.png">
-                    <img src="../img/elo.png">
+                    <img src="img/pix.png">
+                    <img src="img/boleto.png">
+                    <img src="img/americane.png">
+                    <img src="img/vsa.png">
+                    <img src="img/master.png">
+                    <img src="img/hper.png">
+                    <img src="img/elo.png">
                 </section>
             </nav>
             <nav>
@@ -149,9 +149,9 @@
             </nav>
             <nav class="qr-code">
                 <h2>ATENDIMENTO AO CLIENTE</h2>
-                <img src="../img/qr-code.png" class="image-qr">
-                <img src="../img/play.png">
-                <img src="../img/appstore.png">
+                <img src="img/qr-code.png" class="image-qr">
+                <img src="img/play.png">
+                <img src="img/appstore.png">
             </nav>
         </section>
         <div class="copyright">

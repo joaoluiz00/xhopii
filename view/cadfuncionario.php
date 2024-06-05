@@ -15,18 +15,18 @@
             <h1>Xhopii</h1>
         </div>
         <div class="out-button">
-            <a href="login.html">Sair</a>
+            <a href="login.php">Sair</a>
         </div>
     </header>
     <nav class="navbar">
         <ul>
-            <li><a href="home.html"></a>Home</li>
-            <li><a href="cliente.html"></a>Cadastro Cliente</li>
-            <li><a href="funcionario.html"></a>Cadastro Funcionário</li>
-            <li><a href="produto.html"></a>Cadastro Produto</li>
-            <li><a href="home.html"></a>Ver Clientes</li>
-            <li><a href="home.html"></a>Ver Funcionários</li>
-            <li><a href="verproduto.html"></a>Ver Produtos</li>
+            <li><a href="../home.php"></a>Home</li>
+            <li><a href="cadcliente.php"></a>Cadastro Cliente</li>
+            <li><a href="cadfuncionario.php"></a>Cadastro Funcionário</li>
+            <li><a href="produto.php"></a>Cadastro Produto</li>
+            <li><a href="home.php"></a>Ver Clientes</li>
+            <li><a href="home.php"></a>Ver Funcionários</li>
+            <li><a href="verproduto.php"></a>Ver Produtos</li>
         </ul>
     </nav>
     <main>

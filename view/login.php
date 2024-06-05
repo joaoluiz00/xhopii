@@ -36,19 +36,19 @@
             </section>
             <ul class="separation3">
                 <li>
-                    <img src="img/faceIcon.png" height="40px">
+                    <img src="../img/faceIcon.png" height="40px">
                     Facebook
                 </li>
                 <li>
-                    <img src="img/googleIcon.png" height="40px">
+                    <img src="../img/googleIcon.png" height="40px">
                     Google
                 </li>
                 <li>
-                    <img src="img/appleIcon.png" height="40px">
+                    <img src="../img/appleIcon.png" height="40px">
                     Apple
                 </li>
             </ul>
-            <span class="separation4">Novo na Xhopii? <a href="#">Cadasdrar</a></span>
+            <span class="separation4">Novo na Xhopii? <a href="cadcliente.php">Cadastrar</a></span>
         </form>
     </main>
     <footer>
@@ -77,13 +77,13 @@
             <nav class="imagens">
                 <h2>PAGAMENTO</h2>
                 <section>
-                    <img src="img/pix.png">
-                    <img src="img/boleto.png">
-                    <img src="img/americane.png">
-                    <img src="img/vsa.png">
-                    <img src="img/master.png">
-                    <img src="img/hper.png">
-                    <img src="img/elo.png">
+                    <img src="../img/pix.png">
+                    <img src="../img/boleto.png">
+                    <img src="../img/americane.png">
+                    <img src="../img/vsa.png">
+                    <img src="../img/master.png">
+                    <img src="../img/hper.png">
+                    <img src="../img/elo.png">
                 </section>
             </nav>
             <nav>

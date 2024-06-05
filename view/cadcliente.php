@@ -12,23 +12,22 @@
 <body>
     <header>
         <div class="logo">
-            <img src="img/logo.png" height="50px">
+            <img src="../img/logo.png" height="50px">
             <h1>Xhopii</h1>
         </div>
         <div class="out-button">
-            <a href="login.html">Sair</a>
+            <a href="login.php">Sair</a>
         </div>
     </header>
     <nav class="navbar">
         <ul>
-        <li>Home</li>
-        <li><a href="home.html"></a>Home</li>
-            <li><a href="cliente.html"></a>Cadastro Cliente</li>
-            <li><a href="funcionario.html"></a>Cadastro Funcionário</li>
-            <li><a href="produto.html"></a>Cadastro Produto</li>
-            <li><a href="home.html"></a>Ver Clientes</li>
-            <li><a href="home.html"></a>Ver Funcionários</li>
-            <li><a href="verproduto.html"></a>Ver Produtos</li>
+            <li><a href="../home.php"></a>Home</li>
+            <li><a href="cadcliente.php"></a>Cadastro Cliente</li>
+            <li><a href="cadfuncionario.php"></a>Cadastro Funcionário</li>
+            <li><a href="produto.php"></a>Cadastro Produto</li>
+            <li><a href="home.php"></a>Ver Clientes</li>
+            <li><a href="home.php"></a>Ver Funcionários</li>
+            <li><a href="verproduto.php"></a>Ver Produtos</li>
         </ul>
     </nav>
     <main>
@@ -78,13 +77,13 @@
             <nav class="imagens">
                 <h2>PAGAMENTO</h2>
                 <section>
-                    <img src="img/pix.png">
-                    <img src="img/boleto.png">
-                    <img src="img/americane.png">
-                    <img src="img/vsa.png">
-                    <img src="img/master.png">
-                    <img src="img/hper.png">
-                    <img src="img/elo.png">
+                    <img src="../img/pix.png">
+                    <img src="../img/boleto.png">
+                    <img src="../img/americane.png">
+                    <img src="../img/vsa.png">
+                    <img src="../img/master.png">
+                    <img src="../img/hper.png">
+                    <img src="../img/elo.png">
                 </section>
             </nav>
             <nav>
@@ -112,9 +111,9 @@
             </nav>
             <nav class="qr-code">
                 <h2>ATENDIMENTO AO CLIENTE</h2>
-                <img src="img/qr-code.png" class="image-qr">
-                <img src="img/play.png">
-                <img src="img/appstore.png">
+                <img src="../img/qr-code.png" class="image-qr">
+                <img src="../img/play.png">
+                <img src="../img/appstore.png">
             </nav>
         </section>
         <div class="copyright">
