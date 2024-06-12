@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 29-Maio-2024 às 19:21
+-- Tempo de geração: 12-Jun-2024 às 19:26
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.2.0
 
@@ -42,7 +42,25 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`cpf`, `nome`, `sobrenome`, `dataNascimento`, `telefone`, `email`, `senha`) VALUES
+('12345678', 'Bola', 'Almeida', '2024-06-01', '1231231234', 'bl@gmail.com', '12345'),
+('123456789', 'Gustavo ', 'Henrique ', '2024-06-03', '1892939213', 'gu@gmail.com', '1515'),
 ('40308699807', 'Joao', 'Pedro', '2006-03-01', '18997304003', 'joao@gmail.com', 'Joao2006');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `funcionario`
+--
+
+CREATE TABLE `funcionario` (
+  `nome` varchar(200) NOT NULL,
+  `sobrenome` varchar(200) NOT NULL,
+  `cpf` varchar(11) NOT NULL,
+  `dataNasc` date NOT NULL,
+  `telefone` varchar(11) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `salario` decimal(10,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Índices para tabelas despejadas
@@ -52,6 +70,12 @@ INSERT INTO `cliente` (`cpf`, `nome`, `sobrenome`, `dataNascimento`, `telefone`,
 -- Índices para tabela `cliente`
 --
 ALTER TABLE `cliente`
+  ADD PRIMARY KEY (`cpf`);
+
+--
+-- Índices para tabela `funcionario`
+--
+ALTER TABLE `funcionario`
   ADD PRIMARY KEY (`cpf`);
 COMMIT;
 
