@@ -5,7 +5,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="icon" href="../img/logo.png" type="image/png">
-    <title>Xhopii - Ver Produtos</title>
+    <title>Xhopii - Home</title>
 </head>
 <body>
 
@@ -31,11 +31,8 @@
         </ul>
     </nav>
 
-    <section class="conteudo-visualizar">
-        <section class="conteudo-visualizar-box">
-            <h1>Produtos</h1>
-            <!-- INSERIR AQUI O RESULTADO DA CONSULTA POR PRODUTOS -->
-        </section>
+    <section class="conteudo-home">
+        <img src="../img/home.png">
     </section>
 
     <footer class="rodape-login">

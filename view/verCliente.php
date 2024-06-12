@@ -1,3 +1,9 @@
+<?php
+
+    require_once "../processamento/funcoesBD.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -5,7 +11,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="icon" href="../img/logo.png" type="image/png">
-    <title>Xhopii - Ver Produtos</title>
+    <title>Xhopii - Ver Clientes</title>
 </head>
 <body>
 
@@ -33,8 +39,19 @@
 
     <section class="conteudo-visualizar">
         <section class="conteudo-visualizar-box">
-            <h1>Produtos</h1>
-            <!-- INSERIR AQUI O RESULTADO DA CONSULTA POR PRODUTOS -->
+            <h1>Clientes</h1>
+            <?php
+                $listaClientes = retornarClientes();
+                while ($cliente = mysqli_fetch_assoc($listaClientes)){
+                    echo "<section class=\"conteudo-bloco\">";
+                    echo "<h2>" . $cliente["nome"]. " " . $cliente["sobrenome"] . "</h2>";
+                    echo "<p>CPF:". $cliente["cpf"]."</p>";
+                    echo "<p>Data de Nascimento:". $cliente["dataNascimento"]."</p>";
+                    echo "<p>Telefone:". $cliente["telefone"]."</p>";
+                    echo "<p>Email:". $cliente["email"]."</p>";
+                    echo "</section>";
+                }
+            ?>
         </section>
     </section>
 

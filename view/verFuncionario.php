@@ -1,3 +1,8 @@
+<?php
+
+    require_once "../processamento/funcoesBD.php";
+
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -33,8 +38,20 @@
 
     <section class="conteudo-visualizar">
         <section class="conteudo-visualizar-box">
-            <h1>Produtos</h1>
-            <!-- INSERIR AQUI O RESULTADO DA CONSULTA POR PRODUTOS -->
+            <h1>Funcionários</h1>
+            <!-- INSERIR AQUI O RESULTADO DA CONSULTA POR FUNCIONÁRIOS -->
+            <?php
+                $listaFuncionario = retornarFuncionario();
+                while ($listaFuncionario = mysqli_fetch_assoc($listaFuncionario)){
+                    echo "<section class=\"conteudo-bloco\">";
+                    echo "<h2>" . $funcionario["nome"]. " " . $funcionario["sobrenome"] . "</h2>";
+                    echo "<p>CPF:". $funcionario["cpf"]."</p>";
+                    echo "<p>Data de Nascimento:". $funcionario["dataNascimento"]."</p>";
+                    echo "<p>Telefone:". $funcionario["telefone"]."</p>";
+                    echo "<p>Email:". $funcionario["email"]."</p>";
+                    echo "</section>";
+                }
+            ?>
         </section>
     </section>
 

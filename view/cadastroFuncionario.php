@@ -5,7 +5,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="icon" href="../img/logo.png" type="image/png">
-    <title>Xhopii - Ver Produtos</title>
+    <title>Xhopii - Cadastro Funcionario</title>
 </head>
 <body>
 
@@ -31,10 +31,19 @@
         </ul>
     </nav>
 
-    <section class="conteudo-visualizar">
-        <section class="conteudo-visualizar-box">
-            <h1>Produtos</h1>
-            <!-- INSERIR AQUI O RESULTADO DA CONSULTA POR PRODUTOS -->
+    <section class="conteudo-cadastro">
+        <section class="conteudo-formulario-cadastro">
+            <form>
+                <label>Cadastrar Funcionario</label>
+                <input type="text" placeholder="Nome" name="inputNomeFunc">
+                <input type="text" placeholder="Sobrenome" name="inputSobrenomeFunc">
+                <input type="text" placeholder="CPF" name="inputCPFFunc">
+                <input type="date" placeholder="Data Nascimento" name="inputDataNascFunc">
+                <input type="text" placeholder="Telefone" name="inputTelefoneFunc">
+                <input type="text" placeholder="Email" name="inputEmailFunc">
+                <input type="text" placeholder="Salário" name="inputSalarioFunc">
+                <input id="botao" type="submit" value="Cadastrar">
+            </form>
         </section>
     </section>
 

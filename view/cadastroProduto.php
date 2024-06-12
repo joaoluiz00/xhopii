@@ -5,7 +5,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="icon" href="../img/logo.png" type="image/png">
-    <title>Xhopii - Ver Produtos</title>
+    <title>Xhopii - Cadastro Produto</title>
 </head>
 <body>
 
@@ -31,10 +31,16 @@
         </ul>
     </nav>
 
-    <section class="conteudo-visualizar">
-        <section class="conteudo-visualizar-box">
-            <h1>Produtos</h1>
-            <!-- INSERIR AQUI O RESULTADO DA CONSULTA POR PRODUTOS -->
+    <section class="conteudo-cadastro">
+        <section class="conteudo-formulario-cadastro">
+            <form>
+                <label>Cadastrar Produto</label>
+                <input type="text" placeholder="Nome" name="inputNomeProd">
+                <input type="text" placeholder="Fabricante" name="inputFabricanteProd">
+                <input type="text" placeholder="Descrição" name="inputDescricaoProd">
+                <input type="text" placeholder="Valor" name="inputValorProd">
+                <input id="botao" type="submit" value="Cadastrar">
+            </form>
         </section>
     </section>
 
