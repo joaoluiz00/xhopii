@@ -17,10 +17,10 @@ function inserirCliente($cpf, $nome, $sobrenome, $dataNasc, $telefone, $email, $
     die();
 }
 
-function inserirFuncionario($funcnome, $funcsobrenome, $funccpf, $funcdataNasc, $functelefone, $funcemail, $funcsalario){
+function inserirFuncionarios($funccpf, $funcnome, $funcsobrenome, $funcdatanas, $functelefone, $funcemail, $funcsalario){
 
     $conexao = conectarBD();
-    $consulta = "INSERT INTO funcionario (nome, sobrenome, cpf, dataNasc, telefone, email, salario) VALUES ('$funcnome','$funcsobrenome','$funccpf','$funcdataNasc','$functelefone','$funcemail','$funcsalario')";
+    $consulta = "INSERT INTO funcionarios (funccpf, funcnome, funcsobrenome, funcdatanas, functelefone, funcemail, funcsalario) VALUES ('$funccpf','$funcnome','$funcsobrenome','$funcdatanas','$functelefone','$funcemail','$funcsalario')";
 
     mysqli_query($conexao, $consulta);
     
@@ -37,12 +37,12 @@ function retornarClientes(){
 
 }
 
-function retornarFuncionario(){
+function retornarFuncionarios(){
 
     $conexao = conectarBD();
-    $consulta = "SELECT * FROM funcionario";
-    $listaFuncionario = mysqli_query($conexao, $consulta);
-    return($listaFuncionario);
+    $consulta = "SELECT * FROM funcionarios";
+    $listaFuncionarios = mysqli_query($conexao, $consulta);
+    return($listaFuncionarios);
 
 }
 

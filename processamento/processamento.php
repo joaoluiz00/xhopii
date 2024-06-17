@@ -27,12 +27,12 @@ if(!empty($_POST['inputNomeFunc']) && !empty($_POST['inputSobrenomeFunc']) &&
       $funcnome = $_POST['inputNomeFunc'];
       $funcsobrenome = $_POST['inputSobrenomeFunc'];
       $funccpf = $_POST['inputCPFFunc'];
-      $funcdataNasc = $_POST['inputDataNascFunc'];
+      $funcdatanas = $_POST['inputDataNascFunc'];
       $functelefone = $_POST['inputTelefoneFunc'];
       $funcemail = $_POST['inputEmailFunc'];
       $funcsalario = $_POST['inputSalarioFunc'];
 
-      inserirFuncionario($funcnome, $funcsobrenome, $funccpf, $funcdataNasc, $functelefone, $funcemail, $funcsalario);
+      inserirFuncionarios($funccpf, $funcnome, $funcsobrenome, $funcdatanas, $functelefone, $funcemail, $funcsalario);
 }
 
 
