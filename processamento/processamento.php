@@ -36,5 +36,64 @@ if(!empty($_POST['inputNomeFunc']) && !empty($_POST['inputSobrenomeFunc']) &&
 }
 
 
+if (!empty($_POST['inputEmailLog']) && !empty($_POST['inputSenhaLog'])) {
+    $email = $_POST['inputEmailLog'];
+    $senha = $_POST['inputSenhaLog'];
+    loginClientes($email, $senha);
+}
+
+function loginClientes($email, $senha) {
+    $conexao = conectarBD();
+    $consulta = "SELECT * FROM cliente WHERE email = '$email' AND senha = '$senha'";
+    $resultado = mysqli_query($conexao, $consulta);
+    if (mysqli_num_rows($resultado) > 0) {
+        // Login bem-sucedido
+        header('Location: ../view/dashboardCliente.php');
+    } else {
+        // Login falhou
+        header('Location: ../view/login.php?erro=1');
+    }
+    die();
+}
+
+function conectarBD(){
+   $conexao = mysqli_connect("127.0.0.1", "root", "", "xhopii");
+   if (mysqli_connect_errno()) {
+       echo "Failed to connect to MySQL: " . mysqli_connect_error();
+       exit();
+   }
+   return $conexao;
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+   $email = $_POST['email'];
+   $new_password = $_POST['new_password'];
+
+   // Conectar ao banco de dados
+   $conexao = conectarBD();
+
+   // Verificar se o email existe no banco de dados
+   $consulta = "SELECT * FROM cliente WHERE email = '$email'";
+   $resultado = mysqli_query($conexao, $consulta);
+
+   if (mysqli_num_rows($resultado) > 0) {
+       // Email existe, atualizar a senha
+       $update = "UPDATE cliente SET senha = '$new_password' WHERE email = '$email'";
+       if (mysqli_query($conexao, $update)) {
+           echo "Senha redefinida com sucesso.";
+       } else {
+           echo "Erro ao redefinir a senha: " . mysqli_error($conexao);
+       }
+   } else {
+       // Email não encontrado
+       echo "Email não encontrado.";
+   }
+
+   // Fechar a conexão
+   mysqli_close($conexao);
+}
+
+
+
 
 ?>

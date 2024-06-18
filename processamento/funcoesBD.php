@@ -46,4 +46,8 @@ function retornarFuncionarios(){
 
 }
 
+function loginClientes(){
+    
+}
+
 ?>
