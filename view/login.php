@@ -48,7 +48,7 @@
                     Apple
                 </li>
             </ul>
-            <span class="separation4">Novo na Xhopii? <a href="#">Cadastrar</a></span>
+            <span class="separation4">Novo na Xhopii? <a href="cadastroCliente.php">Cadastrar</a></span>
         </form>
     </main>
     <footer>
