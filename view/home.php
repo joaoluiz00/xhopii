@@ -35,9 +35,7 @@
             <li><a href="verProduto.php">Ver Produtos</a></li>
         </ul>
     </nav>
-    <section class="conteudo-home">
-        <img src="../img/home.png" alt="Home Image">
-    </section>
+    <br><br>
     <div class="container">
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -78,6 +76,16 @@
           </a>
         </div>
       </div>
+      <section class="conteudo-home">
+        <img src="../img/home.png" alt="Home Image">
+    </section>
+    
+    <main>
+        <div class="product-grid" id="productGrid"></div>
+    </main>
+    <script src="../processamento/script.js">
+    </script>
+
 
     <footer class="rodape-login">
         <img src="../img/footer-login.png" alt="Footer Image">
