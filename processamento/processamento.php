@@ -19,6 +19,29 @@ if (!empty($_POST['inputNome']) && !empty($_POST['inputSobrenome']) &&
     inserirCliente($cpf, $nome, $sobrenome, $dataNasc, $telefone, $email, $senha);
 }
 
+// Cadastro de produto
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (!empty($_POST['nome']) && !empty($_POST['fabricante']) && 
+        !empty($_POST['descricao']) && !empty($_POST['quantidade']) && !empty($_POST['valor'])) {
+
+        if (isset($_FILES['imagem']) && is_uploaded_file($_FILES['imagem']['tmp_name'])) {
+            $imgData = file_get_contents($_FILES['imagem']['tmp_name']);
+
+            $nome = $_POST['nome'];
+            $fabricante = $_POST['fabricante'];
+            $descricao = $_POST['descricao'];
+            $quantidade = (int) $_POST['quantidade'];
+            $valor = (float) $_POST['valor'];
+
+            inserirProdutos($nome, $fabricante, $descricao, $quantidade, $valor, $imgData);
+        } else {
+            echo "Erro no upload da imagem.";
+        }
+    } else {
+        echo "Preencha todos os campos.";
+    }
+}
+
 // Cadastro de Funcionário
 if (!empty($_POST['inputNomeFunc']) && !empty($_POST['inputSobrenomeFunc']) && 
     !empty($_POST['inputCPFFunc']) && !empty($_POST['inputDataNascFunc']) && 

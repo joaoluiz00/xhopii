@@ -18,6 +18,7 @@ body{
     background-color: rgb(245,245,245);
 }
 
+
 .cabecalho-login #cabecalho-login-logo{
     width: 50%;
     height: 85px;
@@ -244,6 +245,13 @@ body{
 .conteudo-visualizar .conteudo-visualizar-box .conteudo-bloco h2{
     color: rgb(251,86,48);
     font-weight: bold;
+}
+.conteudo-visualizar .conteudo-visualizar-box .conteudo-bloco img{
+    width: 150px; 
+    height: auto; 
+    border: 2px solid orange; 
+    padding: 5px; 
+    border-radius: 5px; 
 }
 
 .rodape-login{

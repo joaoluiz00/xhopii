@@ -25,10 +25,38 @@ function inserirFuncionarios($funccpf, $funcnome, $funcsobrenome, $funcdatanas, 
     header('Location: ../view/cadastroFuncionario.php');
     die();
 }
+function inserirProdutos($nome, $fabricante, $descricao, $quantidade, $valor, $imagem) {
+    $conexao = conectarBD();
+
+    $consulta = $conexao->prepare("INSERT INTO produtos (nome, fabricante, descricao, quantidade, valor, imagem) VALUES (?, ?, ?, ?, ?, ?)");
+    $null = NULL;
+    $consulta->bind_param("sssiib", $nome, $fabricante, $descricao, $quantidade, $valor, $null);
+    $consulta->send_long_data(5, $imagem);
+
+    if ($consulta->execute()) {
+        echo "Produto cadastrado com sucesso!";
+    } else {
+        echo "Erro ao cadastrar produto: " . $consulta->error;
+    }
+
+    $consulta->close();
+    $conexao->close();
+
+    header('Location: ../view/cadastroProduto.php');
+    die();
+}
 
 function retornarClientes() {
     $conexao = conectarBD();
     $consulta = "SELECT * FROM cliente";
+    $listaClientes = mysqli_query($conexao, $consulta);
+    mysqli_close($conexao);
+    return $listaClientes;
+}
+
+function retornarProdudos() {
+    $conexao = conectarBD();
+    $consulta = "SELECT * FROM produtos";
     $listaClientes = mysqli_query($conexao, $consulta);
     mysqli_close($conexao);
     return $listaClientes;

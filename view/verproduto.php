@@ -1,3 +1,8 @@
+<?php
+
+    require_once "../processamento/funcoesBD.php";
+
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -35,6 +40,27 @@
         <section class="conteudo-visualizar-box">
             <h1>Produtos</h1>
             <!-- INSERIR AQUI O RESULTADO DA CONSULTA POR PRODUTOS -->
+            <?php
+                $listaProdutos = retornarProdudos();
+                while ($produtos = mysqli_fetch_assoc($listaProdutos)){
+                    echo "<section class=\"conteudo-bloco\">";
+                    echo "<h2>" . $produtos["nome"] . "</h2>";
+                    echo "<p>Fabricante: " . $produtos["fabricante"] . "</p>";
+                    echo "<p>Descrição: " . $produtos["descricao"] . "</p>";
+                    echo "<p>Valor: " . $produtos["valor"] . "</p>";
+                    echo "<p>Quantidade: " . $produtos["quantidade"] . "</p>";
+
+                    // Exibindo a imagem
+                    if (!empty($produtos["imagem"])) {
+                        $imagemBase64 = base64_encode($produtos["imagem"]);
+                        echo '<img src="data:image/jpeg;base64,' . $imagemBase64 . '" alt="Imagem do Produto" />';
+                    } else {
+                        echo '<p>Sem imagem</p>';
+                    }
+
+                    echo "</section>";
+                }
+            ?>
         </section>
     </section>
 
