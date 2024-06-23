@@ -19,13 +19,13 @@
      <nav class="menu-horizontal">
             <ul>
                 <li> 
-                    <a href="index.html"> Home </a>
+                    <a href="home.php"> Home </a>
                 </li>
                 <li>
-                     <a href="index.html"> Cadastro Cliente </a>
+                     <a href="cadastroCliente.php"> Cadastro Cliente </a>
                 </li>
                 <li> 
-                    <a href="index.html"> Cadastro Funcionário </a>
+                    <a href="cadastroFuncionario.php"> Cadastro Funcionário </a>
                 </li>
                 <li>
                      <a href="index.html"> Cadastro Produto </a>
