@@ -439,7 +439,16 @@ header #cabecalho-logout a{
     font-size: 1.875rem;
     color: rgb(251,86,48);
 }
+.product-link {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do texto do pai */
+    display: block; /* Para que o link ocupe todo o espaço do div */
+}
 
+.product-link:hover .produto {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 /* Estilo geral da seção de visualização */
 .conteudo-visualizar {
     background-color: #f4f4f4;

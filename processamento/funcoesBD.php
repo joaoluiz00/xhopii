@@ -105,5 +105,44 @@ function loginClientes($email, $senha) {
     mysqli_close($conexao);
     die();
 }
+function retornarProdutoPorId($id) {
+    // Substitua esses valores pelos dados corretos de conexão ao banco de dados
+    $servername = "127.0.0.1";
+    $username = "root";
+    $password = "";
+    $dbname = "xhopii";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Conexão falhou: " . $conn->connect_error);
+    }
+
+    $query = "SELECT * FROM produtos WHERE id = $id";
+    $result = $conn->query($query);
+
+    if ($result->num_rows > 0) {
+        return $result->fetch_assoc();
+    } else {
+        return null;
+    }
+}
+
+function retornarTodosProdutos() {
+    // Substitua esses valores pelos dados corretos de conexão ao banco de dados
+    $servername = "127.0.0.1";
+    $username = "root";
+    $password = "";
+    $dbname = "xhopii";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    if ($conn->connect_error) {
+        die("Conexão falhou: " . $conn->connect_error);
+    }
+
+    $query = "SELECT * FROM produtos";
+    return $conn->query($query);
+}
 
 ?>

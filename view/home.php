@@ -91,24 +91,28 @@
         <h2>Descobertas do dia</h2>
     </span>
     <div class="content">
-        <?php
-            $listaProdutos = retornarProdudos();
-            while ($produtos = mysqli_fetch_assoc($listaProdutos)) {
-                echo "<div>";
-                if (!empty($produtos["imagem"])) {
-                    $imagemBase64 = base64_encode($produtos["imagem"]);
-                    echo '<img src="data:image/jpeg;base64,' . $imagemBase64 . '" alt="Imagem do Produto" />';
-                } else {
-                    echo '<img src="../img/produto_default.png" alt="Sem imagem" />';
-                }
-                echo '<span class="desc">' . $produtos["nome"] . '</span>';
-                echo '<span class="fabricante"><strong>Fabricante:</strong> ' . $produtos["fabricante"] . '</span>';
-                echo '<span class="desc"><strong>Descrição:</strong> ' . $produtos["descricao"] . '</span>';
-                echo '<span class="price">R$ ' . $produtos["valor"] . '</span>';
-                echo '<span class="storage">' . $produtos["quantidade"] . ' disponíveis</span>';
-                echo "</div>";
-            }
-        ?>
+        
+    <?php
+    $listaProdutos = retornarTodosProdutos();
+    while ($produtos = mysqli_fetch_assoc($listaProdutos)) {
+        echo '<a href="produto.php?id=' . $produtos["id"] . ' " style="text-decoration: none;"" class="product-link">';
+        echo '<div class="produto">';
+        if (!empty($produtos["imagem"])) {
+        $imagemBase64 = base64_encode($produtos["imagem"]);
+        echo '<img src="data:image/jpeg;base64,' . $imagemBase64 . '" alt="Imagem do Produto" />';
+        } else {
+            echo '<img src="../img/produto_default.png" alt="Sem imagem" />';
+        }
+            echo '<span class="desc">' . htmlspecialchars($produtos["nome"]) . '</span>';
+            echo '<span class="fabricante"><strong>Fabricante:</strong> ' . htmlspecialchars($produtos["fabricante"]) . '</span>';
+            echo '<span class="desc"><strong>Descrição:</strong> ' . htmlspecialchars($produtos["descricao"]) . '</span>';
+            echo '<span class="price">R$ ' . number_format($produtos["valor"], 2, ',', '.') . '</span>';
+            echo '<span class="storage">' . $produtos["quantidade"] . ' disponíveis</span>';
+            echo "</div>";
+            echo '</a>';
+        }
+    ?>
+
     </div>
 </section>
     
