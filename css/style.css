@@ -210,49 +210,64 @@ body{
     text-decoration: none;
 }
 
-.conteudo-visualizar{
-    width: 100%;
-    background-color: rgb(195, 195, 195);
-}
-
-.conteudo-visualizar .conteudo-visualizar-box{
+.produtos {
     width: 80%;
     margin-left: 10%;
-    background-color: rgb(240,240,240);
+    margin-top: 0px;
+    background: #fff;
+}
+.produtos .title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #fb7730;
+}
+.produtos .title h2 {
+    padding: 40px;
+}
+.produtos .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+.produtos .content div {
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
 }
-
-.conteudo-visualizar .conteudo-visualizar-box h1{
-    color: rgb(251,86,48);
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 25px;
-    margin-top: 50px;
-    margin-bottom: 25px;
+.produtos .content div:hover {
+    border: 2px solid #fb5630;
 }
-
-.conteudo-visualizar .conteudo-visualizar-box .conteudo-bloco{
-    width: 60%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    margin-top: 10px;
+.produtos .content div img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.produtos .content div .desc {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #636474;
+}
+.produtos .content div .fabricante {
+    color: #cdc9cc;
     margin-bottom: 10px;
 }
+.produtos .content div .price {
+    color: #fb5630;
+    margin-bottom: 10px;
+}
+.produtos .content div .storage {
+    color: #cdc9cc;
+}
 
-.conteudo-visualizar .conteudo-visualizar-box .conteudo-bloco h2{
-    color: rgb(251,86,48);
-    font-weight: bold;
-}
-.conteudo-visualizar .conteudo-visualizar-box .conteudo-bloco img{
-    width: 150px; 
-    height: auto; 
-    border: 2px solid orange; 
-    padding: 5px; 
-    border-radius: 5px; 
-}
+
 
 .rodape-login{
     width: 60%;
@@ -472,3 +487,4 @@ header #cabecalho-logout a{
     font-size: 1.2rem;
     color: #e91e63;
 }
+
